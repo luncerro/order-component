@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: $defaultFontSize;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  background-color: $paleBlue;
+}

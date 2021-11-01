@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  background-color: #e0e8ff;
+}
+
+.order {
+  width: 400px;
+  height: 600px;
+  margin: 200px auto;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.order__header {
+  background-image: url(../images/illustration-hero.svg);
+  background-position: center;
+  background-size: cover;
+  height: 30%;
+}
+
+.order__title {
+  margin: 50px 0 30px 0;
+  text-align: center;
+  font-weight: 900;
+}
+
+.order__paragraph {
+  text-align: center;
+  padding: 0 13%;
+  color: #7280a7;
+}
+
+.order__plan {
+  margin: 20px auto;
+  height: 15%;
+  width: 80%;
+  background-color: #f5f7ff;
+  border-radius: 15px;
+}
+
+.order__plan::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.order__icon {
+  float: left;
+  height: 90px;
+  width: 90px;
+  position: relative;
+}
+
+.order__icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.order__price {
+  font-size: 14px;
+  float: left;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.order__price--1 {
+  font-weight: 900;
+}
+
+.order__price--2 {
+  line-height: 30px;
+  color: #7280a7;
+}
+
+.order__change {
+  float: left;
+  font-size: 14px;
+  width: 102px;
+  text-align: right;
+  position: relative;
+  height: 100%;
+  color: #3829e0;
+}
+
+.order__change--m {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  text-decoration: underline;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.order__change--m:hover {
+  text-decoration: none;
+  color: rgba(56, 41, 224, 0.747);
+}
+
+.order__pay {
+  color: white;
+  background-color: #3829e0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 10px rgba(56, 41, 224, 0.5);
+          box-shadow: 0 3px 10px rgba(56, 41, 224, 0.5);
+  font-size: 14px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.order__pay:hover {
+  background-color: rgba(56, 41, 224, 0.8);
+}
+
+.order__cancel {
+  color: rgba(114, 128, 167, 0.6);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.order__cancel:hover {
+  color: #7280a7;
+}
+
+.btn {
+  width: 80%;
+  display: block;
+  padding: 10px 0;
+  margin: 0 auto 5px auto;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+/*# sourceMappingURL=main.css.map */

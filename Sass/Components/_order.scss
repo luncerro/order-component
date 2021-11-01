@@ -1,0 +1,106 @@
+.order {
+  width: 400px;
+  height: 600px;
+  margin: 200px auto;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 20px;
+  &__header {
+    background-image: url(../images/illustration-hero.svg);
+    background-position: center;
+    background-size: cover;
+    height: 30%;
+  }
+  &__title {
+    margin: 50px 0 30px 0;
+    text-align: center;
+    font-weight: 900;
+  }
+  &__paragraph {
+    text-align: center;
+    padding: 0 13%;
+    color: $desaturatedBlue;
+  }
+  &__plan {
+    margin: 20px auto;
+    height: 15%;
+    width: 80%;
+    background-color: $veryPaleBlue;
+    border-radius: 15px;
+    @include clearfix;
+  }
+  &__icon {
+    float: left;
+    height: 90px;
+    width: 90px;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__price {
+    font-size: 14px;
+    float: left;
+    width: 40%;
+    margin-top: 20px;
+    &--1 {
+      font-weight: 900;
+    }
+    &--2 {
+      line-height: 30px;
+      color: $desaturatedBlue;
+    }
+  }
+  &__change {
+    float: left;
+    font-size: 14px;
+    width: 102px;
+    text-align: right;
+    position: relative;
+    height: 100%;
+    color: $brightBlue;
+    &--m {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      text-decoration: underline;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__change--m:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.747);
+  }
+  &__pay {
+    color: white;
+    background-color: $brightBlue;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba($brightBlue, 0.5);
+    font-size: 14px;
+    transition: 0.2s;
+  }
+  &__pay:hover {
+    background-color: rgba($brightBlue, 0.8);
+  }
+  &__cancel {
+    color: rgba($desaturatedBlue, 0.6);
+    transition: 0.2s;
+  }
+  &__cancel:hover {
+    color: rgba($desaturatedBlue, 1);
+  }
+}
+.btn {
+  width: 80%;
+  display: block;
+  padding: 10px 0;
+  margin: 0 auto 5px auto;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
